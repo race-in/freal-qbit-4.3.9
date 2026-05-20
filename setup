@@ -25,6 +25,9 @@ Session\DiskQueueSize=8192
 Session\SendBufferWatermark=10240
 Session\SendBufferLowWatermark=8192
 Session\SendBufferWatermarkFactor=400
+Session\SocketSendBufferSize=4096
+Session\SocketReceiveBufferSize=4096
+Session\CheckingMemUsageSize=1024
 [Preferences]
 Bittorrent\MaxConnecs=800
 Bittorrent\MaxConnecsPerTorrent=-1
