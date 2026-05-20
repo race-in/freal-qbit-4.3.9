@@ -26,7 +26,7 @@ Session\SendBufferWatermark=10240
 Session\SendBufferLowWatermark=8192
 Session\SendBufferWatermarkFactor=400
 [Preferences]
-Bittorrent\MaxConnecs=40
+Bittorrent\MaxConnecs=800
 Bittorrent\MaxConnecsPerTorrent=-1
 Bittorrent\MaxUploads=-1
 Bittorrent\MaxUploadsPerTorrent=-1
