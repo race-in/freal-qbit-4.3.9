@@ -21,15 +21,8 @@ Accepted=true
 [BitTorrent]
 Session\AsyncIOThreadsCount=1
 Session\HashingThreadsCount=1
-Session\DiskQueueSize=8192
-Session\SendBufferWatermark=10240
-Session\SendBufferLowWatermark=8192
-Session\SendBufferWatermarkFactor=400
-Session\SocketSendBufferSize=4096
-Session\SocketReceiveBufferSize=4096
-Session\CheckingMemUsageSize=1024
 [Preferences]
-Bittorrent\MaxConnecs=800
+Bittorrent\MaxConnecs=40
 Bittorrent\MaxConnecsPerTorrent=-1
 Bittorrent\MaxUploads=-1
 Bittorrent\MaxUploadsPerTorrent=-1
@@ -67,7 +60,7 @@ set -eux -o pipefail
 pushd "$FERAL_SLOTNS_PATH"
 # Update binary if missing
 if [[ ! -f qbittorrent-nox ]]; then
-    wget --no-verbose -O qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-4.3.9_v1.2.14/x86_64-qbittorrent-nox
+    wget --no-verbose -O qbittorrent-nox https://github.com/userdocs/qbittorrent-nox-static/releases/download/release-5.2.0_v1.2.20/x86_64-qbittorrent-nox
     chmod +x qbittorrent-nox
     # Trigger restart
     pkill -x qbittorrent-nox || true
